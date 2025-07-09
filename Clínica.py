@@ -25,3 +25,28 @@ def Mostrar_Colar():
             print()
         else:
             print("la cola esta vacia")
+
+            def menu():
+                while True:
+                    print("🧾 Menú de Recepción")
+                    print("1️⃣ Agregar paciente")
+                    print("2️⃣ Atender paciente")
+                    print("3️⃣ Mostrar cola")
+                    print("4️⃣ Salir")
+
+                    opcion = input("Seleccione una opción (1-4): ").strip()
+
+                    if opcion == "1":
+                        agregar_paciente()
+                    elif opcion == "2":
+                        atender_paciente()
+                    elif opcion == "3":
+                        mostrar_cola()
+                    elif opcion == "4":
+                        print("👋 Saliendo del programa.")
+                        break
+                    else:
+                        print("❌ Opción inválida. Intente nuevamente.\n")
+
+            if __name__ == "__main__":
+                menu()
