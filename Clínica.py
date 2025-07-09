@@ -43,10 +43,10 @@ def Mostrar_Colar():
                     elif opcion == "3":
                         mostrar_cola()
                     elif opcion == "4":
-                        print("👋 Saliendo del programa.")
+                        print(" Saliendo del programa.")
                         break
                     else:
-                        print("❌ Opción inválida. Intente nuevamente.\n")
+                        print(" Opción inválida. Intente nuevamente.\n")
 
             if __name__ == "__main__":
                 menu()
