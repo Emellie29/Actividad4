@@ -10,3 +10,10 @@ def agregar_paciente():
     else:
         print("Nombre ingresado incorrecto.")
 
+def Atender_Paciente():
+    if cola_paciente:
+        paciente = cola_paciente.popleft()
+        print(f"Atendiendo paciente: {paciente}")
+    else:
+        print("No paciente encontrado en la cola.")
+
