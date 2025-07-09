@@ -6,5 +6,7 @@ def agregar_paciente():
     nombre = input("Ingrese el nombre del paciente: ").strip()
     if nombre:
         cola_paciente.append(nombre)
-        print(f"✅ '{nombre}' agregado a la cola.\n")
+        print(f" '{nombre}' agregado a la cola.\n")
+    else:
+        print("Nombre ingresado incorrecto.")
 
